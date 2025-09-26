@@ -22,12 +22,26 @@ function addR() {
     }
     
     numRows++;
-    console.log(`Added row. Grid is now ${numRows}x${numCols}`);
 }
 
 // Add a column
 function addC() {
-    alert("Clicked Add Col"); // Replace this line with your code.
+    const table = document.getElementById("grid");
+    
+    // If there are no rows, add one first
+    if (numRows === 0) {
+        addR();
+        return;
+    }
+    
+    // Add a cell to each existing row
+    for (let i = 0; i < numRows; i++) {
+        const newCell = table.rows[i].insertCell();
+        newCell.onclick = function() { colorCell(this); };
+    }
+    
+    numCols++;
+    console.log(`Added column. Grid is now ${numRows}x${numCols}`);
 }
 
 // Remove a row
