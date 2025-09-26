@@ -153,7 +153,36 @@ function fillU(){
 
 // Fill all cells
 function fillAll(){
-    alert("Clicked Fill All"); // Replace this line with your code.
+    if (!colorSelected || colorSelected === "SELECT") {
+        alert("Please select a color first!");
+        return;
+    }
+    
+    const table = document.getElementById("grid");
+    const cells = table.getElementsByTagName("td");
+    
+    if (cells.length === 0) {
+        alert("No cells to fill! Please add some rows and columns first.");
+        return;
+    }
+    
+    for (let cell of cells) {
+        // Set the selected color using style property
+        switch(colorSelected) {
+            case 'Red':
+                cell.style.backgroundColor = '#FF6961';
+                break;
+            case 'Blue':
+                cell.style.backgroundColor = '#A7C7E7';
+                break;
+            case 'Green':
+                cell.style.backgroundColor = '#C1E1C1';
+                break;
+            case 'Yellow':
+                cell.style.backgroundColor = '#FDFD96';
+                break;
+        }
+    }
 }
 
 // Clear all cells
