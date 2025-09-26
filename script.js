@@ -41,12 +41,23 @@ function addC() {
     }
     
     numCols++;
-    console.log(`Added column. Grid is now ${numRows}x${numCols}`);
 }
 
 // Remove a row
 function removeR() {
-    alert("Clicked Remove Row"); // Replace this line with your code.
+    if (numRows <= 0) {
+        alert("No rows to remove!");
+        return;
+    }
+    
+    const table = document.getElementById("grid");
+    table.deleteRow(-1); // Remove last row
+    numRows--;
+    
+    // Update columns count if no rows left
+    if (numRows === 0) {
+        numCols = 0;
+    }
 }
 
 // Remove a column
