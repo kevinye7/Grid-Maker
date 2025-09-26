@@ -118,7 +118,37 @@ function colorCell(cell) {
 
 // Fill all uncolored cells
 function fillU(){
-    alert("Clicked Fill All Uncolored"); // Replace this line with your code.
+     if (!colorSelected || colorSelected === "SELECT") {
+        alert("Please select a color first!");
+        return;
+    }
+    
+    const table = document.getElementById("grid");
+    const cells = table.getElementsByTagName("td");
+    
+    for (let cell of cells) {
+        // Check if cell is uncolored
+        const currentBgColor = cell.style.backgroundColor;
+        const isUncolored = !currentBgColor || currentBgColor === '';
+        
+        if (isUncolored) {
+            // Set the selected color using style property
+            switch(colorSelected) {
+                case 'Red':
+                    cell.style.backgroundColor = '#FF6961';
+                    break;
+                case 'Blue':
+                    cell.style.backgroundColor = '#A7C7E7';
+                    break;
+                case 'Green':
+                    cell.style.backgroundColor = '#C1E1C1';
+                    break;
+                case 'Yellow':
+                    cell.style.backgroundColor = '#FDFD96';
+                    break;
+            }
+        }
+    }
 }
 
 // Fill all cells
