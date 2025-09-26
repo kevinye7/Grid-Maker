@@ -187,5 +187,16 @@ function fillAll(){
 
 // Clear all cells
 function clearAll(){
-    alert("Clicked Clear All"); // Replace this line with your code.
+    const table = document.getElementById("grid");
+    const cells = table.getElementsByTagName("td");
+    
+    if (cells.length === 0) {
+        alert("No cells to clear! The grid is empty.");
+        return;
+    }
+    
+    for (let cell of cells) {
+        // Reset to white background
+        cell.style.backgroundColor = 'white';
+    }
 }
