@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Grid Maker</title>
+    <title>David and Kevin's Grid Makers</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="navigation.js" defer></script>
 </head>
 <body>
-    <!-- Menu Buttons -->
-    <button onclick="addR()">Add Row</button>
-    <button onclick="addC()">Add Col</button>
-    <button onclick="removeR()">Remove Row</button>
-    <button onclick="removeC()">Remove Col</button>
-    <button onclick="fillU()">Fill All Uncolored</button>
-    <button onclick="fillAll()">Fill All</button>
-    <button onclick="clearAll()">Clear</button>
-    <select onchange="selectColor()" id="selectedColorId">
-        <option value="SELECT">SELECT</option>
-        <option value="Red">Red</option>
-        <option value="Blue">Blue</option>
-        <option value="Green">Green</option>
-        <option value="Yellow">Yellow</option>
-    </select>
-    <!-- Grid Table -->
-    <table id="grid"></table>
-    <!-- Script -->
-    <script src="script.js"></script>
+    <header>
+        <h1>Grid Maker Explorer</h1>
+        <p>Welcome to our collaborative grid maker project!</p>
+    </header>
+    <main>
+        <h2>Choose a Grid Maker to Explore:</h2>
+        
+        <div class="grid-selection">
+          <div class="grid-card" id="david-grid">
+            <div class="grid-card-content">
+              <h3>David's Grid</h3>
+              <p>Explore amazing wildlife from around the world in David's carefully curated collection of exotic animals and educational exhibits.</p>
+              <button onclick="navigateToGrid('david')" class="grid-button">Enter David's grid</button>
+            </div>
+          </div>
+          
+          <div class="grid-card" id="kevin-grid">
+            <div class="grid-card-content">
+              <h3>Kevin's Grid</h3>
+              <p>Discover incredible creatures and their natural habitats through Kevin's immersive wildlife experience and conservation efforts.</p>
+              <button onclick="navigateToGrid('kevin')" class="grid-button">Enter Kevin's grid</button>
+            </div>
+          </div>
+        </div>
+    </main>
+      
+    <footer>
+    <p>A collaborative project by David & Kevin</p>
+    </footer>
 </body>
 </html>
