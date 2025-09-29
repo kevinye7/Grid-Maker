@@ -19,10 +19,11 @@ function goHome() {
     window.location.href = 'index.html';
 }
 
-function goBack() {
+function goBackToDavid() {
     window.location.href = 'david.html';
 }
-function goBack() {
+
+function goBackToKevin() {
     window.location.href = 'kevin.html';
 }
 
