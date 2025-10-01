@@ -1,0 +1,155 @@
+/* Kevin's Styling - Clean Light Theme with Blue Accents */
+
+/* Page background */
+body {
+    background: #f8fafc;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Subtle dotted pattern background */
+body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Navigation styling - full width header */
+.nav-buttons {
+    background: white;
+    border-bottom: 2px solid #e2e8f0;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 12px;
+}
+
+.nav-button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: all 0.2s ease;
+}
+
+.nav-button:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* Controls container - top toolbar */
+.controls-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 40px;
+    background: white;
+    border-bottom: 2px solid #e2e8f0;
+    position: relative;
+    z-index: 5;
+}
+
+/* Control buttons */
+button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0px);
+}
+
+/* Select dropdown */
+select {
+    border-radius: 5px;
+    border: 2px solid #cbd5e1;
+    padding: 10px 16px;
+    margin: 0;
+    background: white;
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+select:hover {
+    border-color: #3b82f6;
+}
+
+select:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* Grid container - centered */
+#grid {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    margin: 60px auto;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Grid cells */
+td {
+    border: 2px solid #3b82f6;
+    border-radius: 2px;
+    height: 50px;
+    width: 50px;
+    transition: all 0.15s ease;
+    background: #f8fafc;
+}
+
+td:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+    border-color: #2563eb;
+    background: white;
+    z-index: 10;
+}
+
+tr {
+    border: none;
+}
+
+/* Center grid on page */
+body {
+    text-align: center;
+}
+
