@@ -2,7 +2,7 @@
 
 A collaborative grid maker application that allows users to create, customize, and color grids dynamically. This project features two distinct implementations with unique modern designs.
 
-### 🌐 Live Demo
+### Live Demo
 [View Live Project](https://kevinye7.github.io/Grid-Maker/index.html)
 
 ---
@@ -17,13 +17,13 @@ A collaborative grid maker application that allows users to create, customize, a
 
 ### Two Unique Implementations
 
-#### 🌊 David's Grid
+#### David's Grid
 - **Dark Theme** with teal cyan accents
 - **Sidebar Layout** with fixed left navigation
 - **Modern Dark UI** with transparent grid cells
 - Grid cells start empty and can be colored on click
 
-#### 🔷 Kevin's Grid  
+#### Kevin's Grid  
 - **Light Theme** with blue accents
 - **Top Toolbar Layout** with horizontal controls
 - **Clean Minimalist Design** with dotted pattern background
