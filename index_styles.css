@@ -1,6 +1,6 @@
-/* Main Menu Styling - Clean Modern Landing Page */
+/* Main Menu Styling*/
 
-/* Page background - solid clean color */
+/* Page background */
 body {
     background: #f8fafc;
     min-height: 100vh;
@@ -84,7 +84,7 @@ main {
     max-width: 1200px;
 }
 
-/* Grid cards - clean elevated design */
+/* Grid cards*/
 .grid-card {
     background: white;
     border: 2px solid #e2e8f0;

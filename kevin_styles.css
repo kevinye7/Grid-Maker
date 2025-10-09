@@ -1,4 +1,4 @@
-/* Kevin's Styling - Clean Light Theme with Blue Accents */
+/* Kevin's Styling*/
 
 /* Page background */
 body {
@@ -12,7 +12,7 @@ body {
     position: relative;
 }
 
-/* Subtle dotted pattern background */
+/*pattern background */
 body::before {
     content: '';
     position: fixed;
@@ -27,7 +27,7 @@ body::before {
     pointer-events: none;
 }
 
-/* Navigation styling - full width header */
+/* Navigation stylin*/
 .nav-buttons {
     background: white;
     border-bottom: 2px solid #e2e8f0;
@@ -54,7 +54,7 @@ body::before {
     transform: translateY(-2px);
 }
 
-/* Controls container - top toolbar */
+/* Controls container */
 .controls-container {
     display: flex;
     flex-wrap: wrap;
