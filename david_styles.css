@@ -17,7 +17,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Subtle grid pattern background */
+/* pattern background */
 body::before {
     content: '';
     position: fixed;
@@ -32,7 +32,7 @@ body::before {
     z-index: 0;
 }
 
-/* Navigation styling - full width header */
+/* Navigation styling */
 .nav-buttons {
     background: #1e293b;
     border: none;
